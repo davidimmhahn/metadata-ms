@@ -128,7 +128,6 @@ class TableImportance()(implicit planBuilder: PlanBuilder) {
     }
   }
 
-
   // Calculating the the product of the probability vector and the solution vector
   def iteratingImportance(probMatrix: DataQuanta[(Int, Int, Double)],
                           V: DataQuanta[(Int, Double)]): DataQuanta[(Int, Double)] = {
